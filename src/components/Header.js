@@ -78,7 +78,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Nav>
-        <Logo to="/">
+        <Logo to="/mathosphere">
           <FaPuzzlePiece />
           Mathosphere
         </Logo>
@@ -86,7 +86,7 @@ function Header() {
           {menuOpen ? <FaTimes /> : <FaBars />}
         </MenuToggle>
         <NavLinks isOpen={menuOpen}>
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/mathosphere" onClick={() => setMenuOpen(false)}>
             <FaHome />
             Accueil
           </NavLink>
